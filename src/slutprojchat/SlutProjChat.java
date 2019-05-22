@@ -5,19 +5,38 @@
  */
 package slutprojchat;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.*;
+import javax.swing.*;
+
 /**
  *
  * @author eskil.brannerud
  */
-public class SlutProjChat {
+public class SlutProjChat extends JFrame implements ActionListener{
 
     /**
      * @param args the command line arguments
      */
+    String namn;
+    InetAddress iadr;
+    int port;
+    MulticastSocket so;
+    JTextArea txt = new JTextArea();
+    JScrollPane sp = new JScrollPane();
+    JTextField skriv = new JTextField();
+    JButton sluta = new JButton("Koppla ner");
+    
     public static void main(String[] args) {
         // TODO code application logic here
         //ballt är coolt
         //ballare är ballast
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
