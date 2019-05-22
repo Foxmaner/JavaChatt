@@ -17,6 +17,7 @@ public class SlutProjChat {
     public static void main(String[] args) {
         // TODO code application logic here
         //ballt är coolt
+        //ballare är ballast
     }
     
 }
