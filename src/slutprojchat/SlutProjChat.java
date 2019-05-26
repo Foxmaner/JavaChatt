@@ -32,6 +32,7 @@ public class SlutProjChat extends JFrame implements ActionListener{
         // TODO code application logic here
         //ballt är coolt
         //ballare är ballast
+        //Collare
     }
 
     @Override
