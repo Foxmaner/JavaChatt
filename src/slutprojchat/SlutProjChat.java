@@ -14,6 +14,8 @@ import javax.swing.*;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -55,7 +57,11 @@ public class SlutProjChat extends JFrame implements ActionListener{
             new Client();
         }else if (e.getSource()==btnServer) {
             System.out.println("ServerStartas");
-            new Server();
+            try {
+                new Server();
+            } catch (IOException ex) {
+                Logger.getLogger(SlutProjChat.class.getName()).log(Level.SEVERE, null, ex);
+            }
             btnServer.setEnabled(false);
         }
     }
