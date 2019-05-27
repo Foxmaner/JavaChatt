@@ -37,7 +37,8 @@ public class SlutProjChat extends JFrame implements ActionListener{
 
         btnClient.addActionListener(this);
         btnServer.addActionListener(this);
-
+        
+        setResizable(false);
         this.pack();
         this.setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
