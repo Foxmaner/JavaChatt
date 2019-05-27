@@ -54,7 +54,11 @@ public class SlutProjChat extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==btnClient) {
             System.out.println("KlientStartas");
-            new Client();
+            try {
+                new Client();
+            } catch (IOException ex) {
+                Logger.getLogger(SlutProjChat.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }else if (e.getSource()==btnServer) {
             System.out.println("ServerStartas");
             try {

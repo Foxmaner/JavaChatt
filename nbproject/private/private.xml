@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/eskil/Documents/NetBeansProjects/JavaChatt/src/slutprojchat/SlutProjChat.java</file>
+            <file>file:/C:/Users/eskil/Documents/NetBeansProjects/JavaChatt/src/slutprojchat/clientChatPanel.java</file>
+            <file>file:/C:/Users/eskil/Documents/NetBeansProjects/JavaChatt/src/slutprojchat/Client.java</file>
+            <file>file:/C:/Users/eskil/Documents/NetBeansProjects/JavaChatt/src/slutprojchat/ClientManager.java</file>
+            <file>file:/C:/Users/eskil/Documents/NetBeansProjects/JavaChatt/src/slutprojchat/Server.java</file>
+            <file>file:/C:/Users/eskil/Documents/NetBeansProjects/JavaChatt/src/slutprojchat/clientAdressPanel.java</file>
         </group>
     </open-files>
 </project-private>

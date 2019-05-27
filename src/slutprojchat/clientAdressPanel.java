@@ -30,7 +30,7 @@ public class clientAdressPanel extends JPanel {
     JPasswordField passwordPasswordField = new JPasswordField();
 
     JButton connectButton = new JButton("Connect");
-    JButton loginButton = new JButton("Login");
+    JButton disconnectButton = new JButton("Disconnect");
 
     public clientAdressPanel() {
 
@@ -53,7 +53,7 @@ public class clientAdressPanel extends JPanel {
         this.add(usernameTextField);
         this.add(passwordLabel);
         this.add(passwordPasswordField);
-        this.add(loginButton);
+        this.add(disconnectButton);
 
         this.setVisible(true);
     }

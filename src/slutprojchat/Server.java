@@ -16,6 +16,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -29,6 +30,8 @@ public class Server extends JFrame implements ActionListener, Runnable {
     public Thread t = new Thread(this);
     public static int noOfConnections, port;
     private ServerSocket listeningSocket;
+    
+    ArrayList<String> connectedUsers  = new ArrayList<String>();
     
     JLabel ipAddressLabel = new JLabel("IP Address: ");
     JLabel portLabel = new JLabel("Port: ");
@@ -117,9 +120,12 @@ public class Server extends JFrame implements ActionListener, Runnable {
     public void run() {
         while (true) {
             try {
+                
                 Socket clientSocket = listeningSocket.accept();
                 System.out.println(clientSocket.getInetAddress().getHostName() + " connected.");
                 increaseNoOfConnections();
+                connectedUsers.add(clientSocket.getInetAddress().getHostName());
+                
                 new ClientManager(clientSocket);
             } catch (IOException ex) {
                 System.out.println(ex.getMessage());
